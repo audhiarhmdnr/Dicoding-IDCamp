@@ -1,0 +1,205 @@
+body {
+    font-family: "Jost", serif;
+    margin: 0;
+    padding: 0;
+  }
+   
+#content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; 
+  flex: 5;
+}
+
+
+#content article {
+  flex: 2;
+  margin: 10px;
+}
+
+aside {
+  flex: 1; 
+  margin: 10px;
+}
+
+
+figcaption {
+  width: 263px;
+  padding: 10px;
+  color: white;
+  background-color: #FF9843;
+}
+
+nav a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+nav a:hover {
+  font-weight: bold;
+}
+
+nav li {
+  display: inline;
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+nav {
+  background-color: #FFDD95;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  padding-inline: 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+header {
+  display: inline;
+}
+
+main {
+  padding: 5px;
+  display: flex;
+  gap: 1.5rem;
+}
+
+
+h1 {
+  color: #FFDD95;
+}
+
+h2, h3 {
+  color: #FF9843;
+}
+
+h4 {
+  color:white;
+}
+
+p {
+  color: #86A7FC;
+  font-size: 18px;
+}
+
+
+
+*[lang^='en'] {
+  font-style: italic;
+}
+
+
+  
+a:link {
+  color: #FF9843;
+}
+
+a:visited {
+  color: #86A7FC;
+}
+
+a:hover {
+  color: #3468C0;
+}
+
+a:active {
+  color:#FFDD95;
+}
+
+
+.card {
+  padding: 8px;
+  margin-top: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+.jumbotron {
+  font-size: 20px;
+  padding: 60px;
+  background-color: #00c8eb;
+  text-align: center;
+  color: white;
+}
+
+
+.slider-container {
+  position: relative;
+  width: 600px;
+  height: 300px;
+  overflow: hidden;
+  margin: auto;
+}
+
+.slider {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  height: 100%;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.navigation {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.navigation button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.navigation button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+@media screen and (max-width: 1000px) {
+  #content, aside {
+    width: 100%;
+    padding: 0;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+}
+
+  
+footer {
+  padding: 20px;
+  color: white;
+  background-color: #86A7FC;
+  text-align: center;
+  font-weight: bold;
+}
